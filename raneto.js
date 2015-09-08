@@ -172,7 +172,7 @@ var raneto = {
             if(stat.isFile() && path.extname(shortPath) == '.md'){
                 try {
                     var file = fs.readFileSync(filePath),
-                        slug = shortPath,
+                        slug = shortPath;
 
                     if(shortPath.indexOf('index.md') > -1){
                         slug = slug.replace('index.md', '');
